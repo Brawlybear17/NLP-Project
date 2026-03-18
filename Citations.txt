@@ -1,0 +1,66 @@
+What I prompted: Can you provide me with ideas for a checkstrength and load passwords
+methods for java code without f fully giving me the answer just give me examples of ideas of what I could, I later asked for specific methods like how to add the file.close as I didn't fully understand that part
+
+What Solution I recived: Ideas for loadPasswords()
+
+This method is about getting your list of common passwords from somewhere.
+
+Read from a file
+
+Open a file called passwords.txt
+
+Read each line
+
+Add each line to an ArrayList
+
+Hardcode a few passwords (if you don’t want to use a file)
+
+Example: "123456", "password", "qwerty"
+
+Add them manually to an ArrayList
+
+Use a combination
+
+Read from a file if it exists
+
+Otherwise, use a default small list
+
+Ideas for checkStrength()
+
+This method is about analyzing the user’s password.
+
+Length check
+
+If password is shorter than 8 characters → flag “Too short”
+
+Number check
+
+Loop through characters
+
+If no digits → flag “Needs a number”
+
+Uppercase / lowercase check
+
+If all lowercase → flag “Add uppercase letter”
+
+If all uppercase → maybe flag “Add lowercase letter”
+
+Special character check
+
+If no symbols like !@#$% → flag “Add a symbol”
+
+Common password check
+
+Convert input to lowercase
+
+See if it exists in your common passwords ArrayList → flag “Too common”
+
+Optional advanced idea
+
+Count repeated characters (like "aaaaaa") → flag “Too repetitive”
+
+Check sequences like "12345" → flag “Too predictable”
+
+
+
+I also used google to find similar methods to my project but didn't copy directly
